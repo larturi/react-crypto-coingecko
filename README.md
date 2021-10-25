@@ -1,6 +1,6 @@
 # CriptoApp
 
-### React Crypto App with [CoinGecko API](https://api.coingecko.com)
+### React Crypto App with [CoinGecko API](https://www.coingecko.com/en)
 
 ## 🚀 Quick start
 
