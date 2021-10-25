@@ -17,7 +17,7 @@ const TableCoins = ({coins, search}) => {
     );
 
     return (
-        <table className='table table-dark mt-4 table-hover'>
+        <table className='table table-dark mt-4 table-hover table-responsive'>
             <thead>
                 <tr>
                     {

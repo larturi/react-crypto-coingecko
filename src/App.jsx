@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import TableCoins from './components/TableCoins'
 
-import './App.css';
-
 function App() {
 
   const [ coins, setCoins ] = useState([]);
@@ -21,13 +19,15 @@ function App() {
   return (
     <div className='container'>
       <div className='row'>
-        <input 
-          type='text' 
-          placeholder='Search a coin...' 
-          className='form-control bg-dark text-light border-0 mt-4'
-          onChange={e => setSearch(e.target.value)}
-        />
-        <TableCoins coins={coins} search={search}/>
+        <div className="col">
+          <input 
+            type='text' 
+            placeholder='Search a coin...' 
+            className='form-control bg-dark text-light border-0 mt-4'
+            onChange={e => setSearch(e.target.value)}
+          />
+          <TableCoins coins={coins} search={search}/>
+        </div>
       </div>
     </div>
   );

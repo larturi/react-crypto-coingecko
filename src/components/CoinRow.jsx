@@ -4,7 +4,7 @@ const CoinRow = ({coin, index}) => {
     return (
         <tr>
             <td>{index}</td>
-            <td>
+            <td style={{minWidth: '180px'}}>
                 <img src={coin.image} alt={coin.name} style={{width: '20px', borderRadius: '100px'}} className='me-3' />
                 <span>{coin.name}</span>
                 <span className='ms-3 text-muted text-uppercase'>{coin.symbol}</span>
